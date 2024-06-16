@@ -1,0 +1,87 @@
+:root{
+    --gray: hsl(0, 0%, 20%);
+    --gray1: hsl(0, 0%, 12%);
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+}
+*,*::before,*::after{
+    padding: 0em;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 8%);
+}
+header img{
+    border-radius: 70%;
+    width: 100%;
+    display: inline;
+}
+.container{
+    background-color: var(--gray1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin: 5em 2em 5em 2em;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container__heading{
+    margin-top: 0;
+    color: var(--white);
+}
+.container__desc{
+    color: var(--green);
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em 0 1em 0;
+}
+.container__desc--white{
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em 0 1em 0;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    color: var(--white);
+}
+.links-btn{
+    padding: 15px;
+    margin: 0.5em;
+    background-color: var(--gray);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.links a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+.links-btn:hover{
+    background-color: var(--green);
+}
+.links-btn a:hover{
+    color: var(--gray1);
+}
+.attribution {
+     font-size: 11px;
+      text-align: center; 
+    }
+
+.attribution a 
+    {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:1024px) {
+    body{
+        margin: 20px 700px; 
+    }        
+}
